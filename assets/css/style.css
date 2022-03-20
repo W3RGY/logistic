@@ -64,6 +64,7 @@ body {
 /* intro */
 .intro {
 	height: 600px;
+	background: #000 url("../images/intro-bg.jpg") no-repeat centers;
 }
 
 
