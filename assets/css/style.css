@@ -5,7 +5,7 @@ body {
 
 	font-family: 'PT Sans', sans-serif;
 	font-size: 15px;
-	line-height: 1.5;
+	line-height: 1.4;
 	color: #585858;
 }
 
@@ -246,6 +246,10 @@ ul, ol {
 	background: url(../images/map.svg) no-repeat left 30px top 130px;
 }
 
+.section--grey {
+	background-color: #f9f9f9;
+}
+
 .section__title {
 	margin-bottom: 40px;
 	font-family: 'Lato', sans-serif;
@@ -304,7 +308,6 @@ ul, ol {
 .services__text {
 	margin-bottom: 20px;
 	font-size: 15px;
-	line-height: 1.4;
 	color: #585858;
 }
 
@@ -507,18 +510,40 @@ ul, ol {
 .benefits-list__text {
 	font-size: 15px;
 	color: #585858;
-	line-height: 1.4;
 }
 
+/* Team */
 
+.team {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
 
+.team__col {
+	width: 33.33333%;
+	padding: 0 15px;
+}
 
+.team__photo {
+	margin-bottom: 13px;
+	box-shadow: 10px 5px 13px rgba(0,0,0, 0.16);
+}
 
+.team__name {
+	margin-bottom: 5px;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	font-weight: 900;
+	color: #2C2C2C;
+	line-height: 1.2;
+}
 
-
-
-
-
+.team__prof {
+	font-size: 15px;
+	color: #585858;
+	margin-bottom: 11px;
+}
 
 
 
