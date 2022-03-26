@@ -523,6 +523,7 @@ ul, ol {
 .team__col {
 	width: 33.33333%;
 	padding: 0 15px;
+	margin-bottom: 30px;
 }
 
 .team__photo {
@@ -545,11 +546,30 @@ ul, ol {
 	margin-bottom: 11px;
 }
 
+.team__contacts {
+	font-size: 14px;
+	line-height: 1.2;
+	color: #585858;
+}
 
+.team__contacts li {
+	margin-bottom: 9px;
+}
 
+.team__contacts a {
+	color: #585858;
+	text-decoration: none;
+}
 
+.team__contacts a:hover {
+	text-decoration: underline;
+}
 
-
+.team__contacts-icon {
+	width: 16px;
+	height: auto;
+	margin-right: 7px;
+}
 
 
 
