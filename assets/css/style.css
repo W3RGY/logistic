@@ -35,6 +35,10 @@ ul, ol {
 	height: auto;
 }
 
+.text-center {
+	text-align: center;
+}
+
 /* Container */
 .container {
 	width: 100%;
@@ -571,9 +575,64 @@ ul, ol {
 	margin-right: 7px;
 }
 
+/* Mission */
+.mission-title {
+	font-family: 'Lato', sans-serif;
+	font-size: 90px;
+	font-weight: 900;
+	color: rgba(0,0,0, 0.05);
+	text-transform:uppercase;
+	line-height: 1;
+	text-align: center;
+}
 
+.mission {
+	padding: 60px 30px;
+	margin-bottom: 30px;
+	position: relative;
+	margin-top: -20px;
 
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 5px 30px rgba(0,0,0, 0.16);
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
 
+.mission:before,
+.mission:after {
+	content: "";
+	display: block;
+	width: 41.66666%;
+	height: 2px;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+}
+
+.mission:before {
+	background-color: #004AF2;
+	right: 50%;
+}
+
+.mission:after {
+	background-color: #FC2C2B;
+	left: 50%;
+}
+
+.mission__title {
+	margin-bottom: 5px;
+	color: #004AF2;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.mission__subtitle {
+	color: #585858;
+	font-size: 21px;
+	font-weight: 400;
+}
 
 
 
