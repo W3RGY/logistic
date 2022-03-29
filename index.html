@@ -49,7 +49,7 @@
 							<div class="form__group">
 								<input class="input input--email" type="email" placeholder="Your e-mail">
 							</div>
-							<button class="btn btn--block btn--orange" type="submit">Call me back</button>
+							<button class="btn btn--block btn--orange" type="submit"><span>Call me back</span></button>
 						</form>
 					</div>
 				</div>
@@ -183,7 +183,7 @@
 				</div>
 
 			</div> <!--/.clients-->
-			<a class="btn btn--orange" href="#">Become a client</a>
+			<button class="btn btn--orange btn--shadow" type="button" href="#"><span>Become a client</span></button>
 			<span class="clients-love">we love our clients</span>
 		</div> <!--/.container-->
 	</section>
@@ -298,18 +298,117 @@
 				<h4 class="mission__subtitle">Book your Cargo now & Your job just got a lot easier</h4>
 			</div>
 			<div class="text-center">
-				<button class="btn btn--orange" type="button">Become a client</button>
+				<button class="btn btn--orange btn--shadow" type="button"><span>Become a client</span></button>
 			</div>
 		</div>
 	</section>
 
+	<!-- News -->
+	<section class="section">
+		<div class="container">
+			<h2 class="section__title"><span>Interesting</span> to read</h2>
 
+			<div class="articles">
+				<article class="articles__item">
+					<h4 class="articles__title">
+						<a href="#">News <title></title></a>
+					</h4>
+					<div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</div>
+					<time class="articles__date" pubdate="27.03.2022 19:00">21 March, 2022</time>
+				</article>
+				<article class="articles__item">
+					<h4 class="articles__title">
+						<a href="#">News <title></title></a>
+					</h4>
+					<div class="articles__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</div>
+					<time class="articles__date" pubdate="27.03.2022 19:00">21 March, 2022</time>
+				</article>
+			</div> <!--/.articles-->
 
+			<a class="btn btn--orange btn--shadow" href="#"><span>Visit blog</span></a>
+		</div> <!--/.container-->
+	</section>
 
+<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<img src="assets/images/logo-black.svg" alt="">
+			<address class="footer__contacts">
+				<p>New York, Street, ZIP code</p>
+				<p>Call Us: <a href="tel:+9948373123"> +9948373123</a> or E-mail:
+					<a href="mailto:hello@centerlogistic.com"> hello@centerlogistic.com</a>
+				</p>
+			</address>
+			<nav class="footer__nav">
+				<a href="#">Terms & Contidions</a>
+				<a href="#">Privacy Policy</a>
+				<a href="#">Our blog</a>
+			</nav>
+		</div>
+	</footer>
 
+	<!-- Modals-->
+	<div class="modal" id="becomeClientModal">
+		<div class="modal__inner">
+			<div class="modal__header">
+				<h4 class="modal__title">Need to deliver your cargo?
+				We can help!</h4>
+				<div class="modal__text">
+					<p>Fill a little form and we will call you back!</p>
+				</div>
+			</div>
+			<form class="form" action="/" method="post">
+				<div class="form__group">
+					<input class="input input--dark input--user" type="text" placeholder="Your name">
+				</div>
+				<div class="form__group">
+					<input class="input input--dark input--phone" type="tel" placeholder="Your phone">
+				</div>
+				<div class="form__group">
+					<input class="input input--dark input--email" type="email" placeholder="Your e-mail">
+				</div>
+				<button class="btn btn--block btn--orange" type="submit"><span>Call me back</span></button>
+			</form>
+			<div class="modal__footer">
+				<h4 class="modal__footer-title">Our contacts</h4>
+				<address class="modal__contacts">
+					<p>New York, Street, ZIP code</p>
+					<p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+					<p>E-mail: <a href="mailto:hello@centerlogistic.com">
+					hello@centerlogistic.com</a></p>
+				</address>
+			</div>
 
+			<button class="modal__close" type="button">
+				<img src="assets/images/close.svg" alt="Close">
+			</button>
+		</div> <!--/.modal__inner-->
+	</div> <!--/.modal-->
 
+	<div class="modal" id="thanksClientModal">
+		<div class="modal__inner">
+			<div class="modal__header">
+				<img class="modal__icon" src="assets/images/tick.svg" alt="">
+				<h4 class="modal__title">Thanks for your request</h4>
+				<div class="modal__text">
+					<p>We call you back as soon as possible!</p>
+				</div>
+			</div>
+			<div class="modal__footer">
+				<h4 class="modal__footer-title">Our contacts</h4>
+				<address class="modal__contacts">
+					<p>New York, Street, ZIP code</p>
+					<p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+					<p>E-mail: <a href="mailto:hello@centerlogistic.com">
+					hello@centerlogistic.com</a></p>
+				</address>
+			</div>
 
+			<button class="modal__close" type="button">
+				<img src="assets/images/close.svg" alt="Close">
+			</button>
+		</div> <!--/.modal__inner-->
+	</div> <!--/.modal-->
 
 
 </body>
