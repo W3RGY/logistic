@@ -51,6 +51,13 @@ ul, ol {
 	padding: 0 15px;
 }
 
+/* Page */
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 /* Header */
 .header {
 	width: 100%;
@@ -60,6 +67,10 @@ ul, ol {
 	right: 0;
 	left: 0;
 	z-index: 1000;
+}
+
+.header--dark {
+	background-color: rgba(0,0,0, 0.8);
 }
 
 .header__inner {
@@ -85,6 +96,10 @@ ul, ol {
 	text-decoration: none;
 }
 
+.nav__link:not(.active):hover {
+	text-decoration: underline;
+}
+
 .nav__link.active {
 	background-color: #004AF2;
 }
@@ -94,6 +109,18 @@ ul, ol {
 	margin-bottom: 30px;
 
 	background: #000 url("../images/intro-bg.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.intro--blog {
+	height: 350px;
+	background: #000 url("../images/blog-bg.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.intro--text {
+	height: 350px;
+	background: #000 url("../images/text-bg.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -152,12 +179,17 @@ ul, ol {
 	bottom: -30px;
 }
 
+.request-form--right {
+	margin-left: auto;
+}
+
 .request-form__header {
 	padding: 20px 30px;
 	background-color: #033FC9;
 }
 
 .request-form__title {
+	margin-bottom: 5px;
 	font-family: 'Lato', sans-serif;
 	font-size: 30px;
 	font-weight: 900;
@@ -314,6 +346,10 @@ ul, ol {
 
 .section--grey {
 	background-color: #f9f9f9;
+}
+
+.section--last {
+	margin-bottom: 60px;
 }
 
 .section__title {
@@ -704,6 +740,16 @@ ul, ol {
 	margin-bottom: 30px;
 }
 
+.articles--column {
+	flex-direction: column;
+}
+
+.articles--column
+.articles__item {
+	max-width: none;
+	margin-bottom: 45px;
+}
+
 .articles__item {
 	width: 100%;
 	max-width: 500px;
@@ -741,7 +787,7 @@ ul, ol {
 
 /* Footer */
 .footer {
-	margin-top: 60px;
+	margin-top: auto;
 	text-align: center;
 	padding: 40px 0;
 	background-color: #F9F9F9;
@@ -890,5 +936,83 @@ ul, ol {
 .modal__close img {
 	display: block;
 }
+
+/* Main */
+.main {
+	display: flex;
+}
+
+.main__col {
+	width: 50%;
+}
+
+/* Text */
+.text {
+	max-width: 890px;
+	font-size: 18px;
+	color: #585858;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+
+.text p {
+	margin-bottom: 20px;
+}
+
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6, {
+	margin-bottom: 20px;
+	color: ##2C2C2C;
+	font-weight: 700;
+}
+
+.text h2 {
+	font-size: 27px;
+}
+
+.text h3 {
+	font-size: 24px;
+}
+
+.text h4 {
+	font-size: 21px;
+}
+
+.text h5 {
+	font-size: 18px;
+}
+
+.text h6 {
+	font-size: 15px;
+}
+
+.text ol,
+.text ul {
+	margin-bottom: 20px;
+}
+
+.text ol {
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+.text img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 
