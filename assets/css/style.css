@@ -963,9 +963,9 @@ ul, ol {
 .text h3,
 .text h4,
 .text h5,
-.text h6, {
+.text h6 {
 	margin-bottom: 20px;
-	color: ##2C2C2C;
+	color: #2C2C2C;
 	font-weight: 700;
 }
 
