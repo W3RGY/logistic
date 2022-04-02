@@ -1016,14 +1016,11 @@ ul, ol {
 
 
 /* Media Queries */
-
 @media (max-width: 767px) {
-
     /* Header */
     .header__inner {
         height: 50px;
     }
-
 
     /* Nav */
     .nav {
