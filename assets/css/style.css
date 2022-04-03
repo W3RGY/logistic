@@ -1016,6 +1016,12 @@ ul, ol {
 
 
 /* Media Queries */
+@media (max-width: 991px) {
+	.services__item {
+		width: 50%;
+	}
+}
+
 @media (max-width: 767px) {
     /* Header */
     .header__inner {
@@ -1091,6 +1097,9 @@ ul, ol {
     .intro__title-amp {
         font-size: 90px;
     }
+	.services__item {
+		width: 100%;
+	}
 }
 
 
