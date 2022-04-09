@@ -5,17 +5,20 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>CenterLogistic</title>
 </head>
 <body>
 
+<div class="page">
 	<!--header-->
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
-			<div class="header__inner">
+			<a href="index.html">
+				<div class="header__inner">
 				<img src="assets/images/logo.svg" alt="CenterLogistic">
-
+			</a>
 				<nav class="nav">
 					<a class="nav__link active" href="#">Services</a>
 					<a class="nav__link" href="#">Clients</a>
@@ -24,12 +27,15 @@
 					<a class="nav__link" href="#">News</a>
 					<a class="nav__link" href="#">Contact Us</a>
 				</nav>
+				<button class="burger" type="button">
+					<img class="burger__icon" src="assets/images/burger.svg" alt="">
+				</button>
 			</div>
 		</div>
 	</header>
 
 	<!-- Intro-->
-	<div class="intro">
+	<div class="intro" id="intro">
 		<div class="container">
 			<div class="intro__inner">
 				<div class="request-form request-form--intro">
@@ -123,42 +129,42 @@
 					<ul class="clients__list">
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/images/clients/atica.svg" alt="">
+								<img class="clients__list-logo img" src="assets/images/clients/atica.svg" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/images/clients/hex-lab.svg" alt="">
+								<img class="clients__list-logo img" src="assets/images/clients/hex-lab.svg" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/images/clients/amara.svg" alt="">
+								<img class="clients__list-logo img" src="assets/images/clients/amara.svg" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/images/clients/muzica-2.svg" alt="">
+								<img class="clients__list-logo img" src="assets/images/clients/muzica-2.svg" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/images/clients/solaytic.svg" alt="">
+								<img class="clients__list-logo img" src="assets/images/clients/solaytic.svg" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/images/clients/hexa.svg" alt="">
+								<img class="clients__list-logo img" src="assets/images/clients/hexa.svg" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/images/clients/utosia-2.svg" alt="">
+								<img class="clients__list-logo img" src="assets/images/clients/utosia-2.svg" alt="">
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/images/clients/fox-hub.svg" alt="">
+								<img class="clients__list-logo img" src="assets/images/clients/fox-hub.svg" alt="">
 							</a>
 						</li>
 					</ul>
@@ -189,8 +195,9 @@
 	</section>
 
 	<!--Benefits-->
-	<div class="section">
+	<section class="section">
 		<div class="container">
+			<h2 class="section__title"><span>Our</span> benefits</h2>
 			<div class="benefits">
 				<div class="benefits__col">
 					<ul class="benefits-list">
@@ -220,11 +227,12 @@
 						</li>
 					</ul>
 				</div> <!--/.benefits__col-->
-				<div class="benefits__col"></div>
-				<img src="assets/images/benefits=photo.jpg" alt="">
+				<div class="benefits__col">
+					<img class="img" src="assets/images/benefits=photo.jpg" alt="">
+				</div>
 			</div> <!--/.benefits-->
 		</div> <!--/.container-->
-	</div> <!--/.section-->
+	</section> <!--/.section-->
 
 	<!-- Team -->
 	<section class="section section--grey">
@@ -292,7 +300,7 @@
 	<!-- Mission -->
 	<section class="section">
 		<div class="container">
-			<h2 class="mission-title">our mission</h2>
+			<h2 class="mission-title">Our mission</h2>
 			<div class="mission">
 				<h3 class="mission__title">To provide our customer qualified services according the international</h3>
 				<h4 class="mission__subtitle">Book your Cargo now & Your job just got a lot easier</h4>
@@ -304,7 +312,7 @@
 	</section>
 
 	<!-- News -->
-	<section class="section">
+	<section class="section section--last">
 		<div class="container">
 			<h2 class="section__title"><span>Interesting</span> to read</h2>
 
@@ -325,7 +333,7 @@
 				</article>
 			</div> <!--/.articles-->
 
-			<a class="btn btn--orange btn--shadow" href="#"><span>Visit blog</span></a>
+			<a class="btn btn--orange btn--shadow" href="blog.html"><span>Visit blog</span></a>
 		</div> <!--/.container-->
 	</section>
 
@@ -346,42 +354,44 @@
 			</nav>
 		</div>
 	</footer>
+</div>
 
 	<!-- Modals-->
 	<div class="modal" id="becomeClientModal">
 		<div class="modal__inner">
-			<div class="modal__header">
-				<h4 class="modal__title">Need to deliver your cargo?
-				We can help!</h4>
-				<div class="modal__text">
-					<p>Fill a little form and we will call you back!</p>
+			<div class="modal__content">
+				<div class="modal__header">
+					<h4 class="modal__title">Need to deliver your cargo?
+					We can help!</h4>
+					<div class="modal__text">
+						<p>Fill a little form and we will call you back!</p>
+					</div>
 				</div>
-			</div>
-			<form class="form" action="/" method="post">
-				<div class="form__group">
-					<input class="input input--dark input--user" type="text" placeholder="Your name">
+				<form class="form" action="/" method="post">
+					<div class="form__group">
+						<input class="input input--dark input--user" type="text" placeholder="Your name">
+					</div>
+					<div class="form__group">
+						<input class="input input--dark input--phone" type="tel" placeholder="Your phone">
+					</div>
+					<div class="form__group">
+						<input class="input input--dark input--email" type="email" placeholder="Your e-mail">
+					</div>
+					<button class="btn btn--block btn--orange" type="submit"><span>Call me back</span></button>
+				</form>
+				<div class="modal__footer">
+					<h4 class="modal__footer-title">Our contacts</h4>
+					<address class="modal__contacts">
+						<p>New York, Street, ZIP code</p>
+						<p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+						<p>E-mail: <a href="mailto:hello@centerlogistic.com">
+						hello@centerlogistic.com</a></p>
+					</address>
 				</div>
-				<div class="form__group">
-					<input class="input input--dark input--phone" type="tel" placeholder="Your phone">
-				</div>
-				<div class="form__group">
-					<input class="input input--dark input--email" type="email" placeholder="Your e-mail">
-				</div>
-				<button class="btn btn--block btn--orange" type="submit"><span>Call me back</span></button>
-			</form>
-			<div class="modal__footer">
-				<h4 class="modal__footer-title">Our contacts</h4>
-				<address class="modal__contacts">
-					<p>New York, Street, ZIP code</p>
-					<p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
-					<p>E-mail: <a href="mailto:hello@centerlogistic.com">
-					hello@centerlogistic.com</a></p>
-				</address>
-			</div>
-
-			<button class="modal__close" type="button">
-				<img src="assets/images/close.svg" alt="Close">
-			</button>
+				<button class="modal__close" type="button">
+					<img src="assets/images/close.svg" alt="Close">
+				</button>
+			</div> <!--/.modal__content-->
 		</div> <!--/.modal__inner-->
 	</div> <!--/.modal-->
 
@@ -410,6 +420,8 @@
 		</div> <!--/.modal__inner-->
 	</div> <!--/.modal-->
 
-
+	<!-- JasaScript-->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>
