@@ -4,9 +4,11 @@ body {
 	background-color: #fff;
 
 	font-family: 'PT Sans', sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.4;
 	color: #585858;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body.no-scroll {
@@ -67,6 +69,7 @@ ul, ol {
 	right: 0;
 	left: 0;
 	z-index: 1000;
+	transition: background .2s linear;
 }
 
 .header--dark {
@@ -83,7 +86,7 @@ ul, ol {
 /* Nav */
 .nav {
 	display: flex;
-	font-size: 15px;
+	font-size: 16px;
 	height: 100%;
 }
 
@@ -115,7 +118,6 @@ ul, ol {
 /* intro */
 .intro {
 	margin-bottom: 30px;
-
 	background: #000 url("../images/intro-bg.jpg") no-repeat center;
 	background-size: cover;
 }
@@ -145,8 +147,8 @@ ul, ol {
 }
 
 .intro__countries {
-
-	color: #FFFFFF;
+	font-size: 16px;
+	color: #FFF;
 }
 
 .intro__title {
@@ -205,7 +207,7 @@ ul, ol {
 }
 
 .request-form__text {
-	font-size: 15px;
+	font-size: 16px;
 	color: #fff;
 	line-height: 1.4;
 }
@@ -417,7 +419,7 @@ ul, ol {
 
 .services__text {
 	margin-bottom: 20px;
-	font-size: 15px;
+	font-size: 16px;
 	color: #585858;
 }
 
@@ -427,7 +429,7 @@ ul, ol {
 
 .services__link {
 	display: inline-block;
-	font-size: 15px;
+	font-size: 16px;
 	color: #004AF2;
 	text-decoration: none;
 
@@ -540,12 +542,12 @@ ul, ol {
 }
 
 .reviews__company {
-	font-size: 15px;
+	font-size: 16px;
 	color: #2C2C2C;
 }
 
 .reviews__content {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.8;
 	color: #585858;
 }
@@ -618,7 +620,7 @@ ul, ol {
 }
 
 .benefits-list__text {
-	font-size: 15px;
+	font-size: 16px;
 	color: #585858;
 }
 
@@ -651,7 +653,7 @@ ul, ol {
 }
 
 .team__prof {
-	font-size: 15px;
+	font-size: 16px;
 	color: #585858;
 	margin-bottom: 11px;
 }
@@ -749,12 +751,18 @@ ul, ol {
 
 .articles--column {
 	flex-direction: column;
+	margin-bottom: 75px;
 }
 
 .articles--column
 .articles__item {
 	max-width: none;
 	margin-bottom: 45px;
+}
+
+.articles--column
+.articles__item:last-child {
+	margin-bottom: 0;
 }
 
 .articles__item {
@@ -766,8 +774,8 @@ ul, ol {
 
 .articles__title {
 	margin-bottom: 15px;
-	font-size: 18px;
-	font-weight: 800;
+	font-size: 24px;
+	font-weight: 700;
 	color: #2C2C2C;
 }
 
@@ -782,7 +790,7 @@ ul, ol {
 
 .articles__text {
 	margin-bottom: 15px;
-	font-size: 15px;
+	font-size: 16px;
 	color: #585858;
 }
 
@@ -842,12 +850,12 @@ ul, ol {
 /* Modals */
 .modal {
 	display: none;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
 	width: 100%;
 	height: 100%;
+	overflow-y: auto;
 	background-color: rgba(0, 0, 0, 0.9);
+	padding: 30px 15px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -857,10 +865,17 @@ ul, ol {
 .modal.show {
 	display: flex;
 }
+.modal__inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100%;
+}
 
-.modal__inner {
+.modal__content {
 	position: relative;
-	width: 400px;
+	width: 100%;
+	max-width: 400px;
 	padding: 25px;
 	background-color: #fff;
 }
@@ -884,7 +899,7 @@ ul, ol {
 }
 
 .modal__text {
-	font-size: 15px;
+	font-size: 16px;
 	color: #2C2C2C;
 }
 
@@ -904,7 +919,7 @@ ul, ol {
 }
 
 .modal__contacts {
-	font: 15px;
+	font-size: 14px;
 	color: #2C2C2C;
 	font-style: normal;
 }
@@ -948,10 +963,12 @@ ul, ol {
 /* Main */
 .main {
 	display: flex;
+	margin: 0 -15px;
 }
 
 .main__col {
 	width: 50%;
+	padding: 0 15px;
 }
 
 /* Text */
@@ -994,7 +1011,7 @@ ul, ol {
 }
 
 .text h6 {
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .text ol,
@@ -1035,6 +1052,10 @@ ul, ol {
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
     }
+	.intro--blog,
+	.intro--text {
+		height: 250px;
+	}
 	/* Section */
 	.section__title {
 		text-align: center;
@@ -1068,6 +1089,13 @@ ul, ol {
 	.footer {
 		background-size: 350px auto;
 		background-position: left -30px bottom -30px, right -30px bottom -30px;
+	}
+	/* Main */
+	.main__col--left {
+		width: 55%;
+	}
+	.main__col--right {
+		width: 45%;
 	}
 }
 
@@ -1180,10 +1208,24 @@ ul, ol {
 	.articles__item {
 		max-width: none;
 	}
+	.articles--column {
+		margin-bottom: 30px;
+	}
 	/* Footer */
 	.footer {
 		background-size: 250px auto;
 		background-position: left -20px bottom -30px, right -20px bottom -30px;
+	}
+	/* Main */
+	.main {
+		flex-direction: column;
+	}
+	.main__col {
+		width: 100%;
+	}
+	/* Request-form */
+	.request-form--right {
+		margin: 30px auto 0;
 	}
 }
 
@@ -1259,6 +1301,11 @@ ul, ol {
 	/* Footer */
 	.footer {
 		background-position: left -120px bottom -80px, right -120px bottom -80px;
+	}
+	/* Modal */
+	.modal__close {
+		right: 0;
+		top: -30px;
 	}
 }
 

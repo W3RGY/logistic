@@ -5,6 +5,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>CenterLogistic</title>
 </head>
@@ -23,6 +24,9 @@
 					<a class="nav__link" href="text.html">Privacy Policy</a>
 					<a class="nav__link" href="text2.html">Terms & Conditions</a>
 				</nav>
+				<button class="burger" type="button">
+					<img class="burger__icon" src="assets/images/burger.svg" alt="">
+				</button>
 			</div>
 		</div>
 	</header>
@@ -35,7 +39,7 @@
 	<section class="section section--last">
 		<div class="container">
 			<main class="main">
-				<div class="main__col">
+				<div class="main__col main__col--left">
 					<h1 class="section__title"><span>Interesting</span> to read</h1>
 					<div class="articles articles--column">
 						<article class="articles__item">
@@ -70,7 +74,7 @@
 
 					<a class="btn btn--orange" href="index.html"><span>Back to home</span></a>
 				</div>
-				<div class="main__col">
+				<div class="main__col main__col--right">
 					<div class="request-form request-form--right">
 						<div class="request-form__header">
 							<h3 class="request-form__title">Get Callback</h3>
@@ -91,13 +95,6 @@
 								<button class="btn btn--block btn--orange" type="submit"><span>Call me back</span></button>
 							</form>
 						</div>
-					</div>
-
-					<div class="intro__text">
-						<div class="intro__countries" >USA, Europe, Asia</div>
-						<h1 class="intro__title" >
-							<span class="intro__title-amp">&amp;</span>
-							Trans<br>Logistic</h1>
 					</div>
 				</div>
 			</main>
@@ -122,6 +119,10 @@
 		</div>
 	</footer>
 </div>
+
+	<!-- JasaScript-->
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.min.js"></script>
+	<script src="assets/js/app.js"></script>
 
 </body>
 </html>
