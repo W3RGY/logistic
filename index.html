@@ -15,10 +15,10 @@
 	<!--header-->
 	<header class="header" id="header">
 		<div class="container">
-			<a href="#" data-scroll="#intro">
-				<div class="header__inner">
+			<div class="header__inner">
+				<a href="#" data-scroll="#intro">
 				<img src="assets/images/logo.svg" alt="CenterLogistic">
-			</a>
+				</a>
 				<nav class="nav" id="nav">
 					<a class="nav__link" href="#" data-scroll="#services">Services</a>
 					<a class="nav__link" href="#" data-scroll="#clients">Clients</a>
@@ -190,7 +190,7 @@
 				</div>
 
 			</div> <!--/.clients-->
-			<button class="btn btn--orange btn--shadow" type="button" href="#"><span>Become a client</span></button>
+			<button class="btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal"><span>Become a client</span></button>
 			<span class="clients-love">we love our clients</span>
 		</div> <!--/.container-->
 	</section>
@@ -353,7 +353,7 @@
 			</nav>
 		</div>
 	</footer>
-</div>
+</div> <!-- /.page -->
 
 	<!-- Modals-->
 	<div class="modal" id="becomeClientModal">
@@ -387,7 +387,7 @@
 						hello@centerlogistic.com</a></p>
 					</address>
 				</div>
-				<button class="modal__close" type="button">
+				<button class="modal__close" type="button" data-modal-close>
 					<img src="assets/images/close.svg" alt="Close">
 				</button>
 			</div> <!--/.modal__content-->

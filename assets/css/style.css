@@ -863,7 +863,7 @@ ul, ol {
 }
 
 .modal.show {
-	display: flex;
+	display: block;
 }
 .modal__inner{
 	display: flex;
@@ -878,6 +878,10 @@ ul, ol {
 	max-width: 400px;
 	padding: 25px;
 	background-color: #fff;
+	opacity: 0;
+
+	transform: scale(0.5);
+	transition: transform .2s ease-out, opacity .2s ease-out;
 }
 
 .modal__header {
@@ -950,6 +954,10 @@ ul, ol {
 	z-index: 1;
 
 	transition: transform .2s linear;
+}
+
+.modal__close:focus {
+	outline: none;
 }
 
 .modal__close:hover {
