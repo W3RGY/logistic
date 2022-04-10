@@ -97,6 +97,7 @@ ul, ol {
 
 	color: #fff;
 	text-decoration: none;
+	transition: background .2s linear;
 }
 
 .nav__link:not(.active):hover {
