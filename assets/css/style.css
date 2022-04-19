@@ -120,8 +120,7 @@ ul, ol {
 .intro {
 	position: relative;
 	margin-bottom: 30px;
-	/*background: #000 url("../images/intro-bg.jpg") no-repeat center;
-	background-size: cover;*/
+	background-color: #000;
 }
 
 .intro--blog {
@@ -158,6 +157,39 @@ ul, ol {
 	object-fit: cover;
 }
 
+.intro__slider-arrows {
+	position: absolute;
+	bottom: 30px;
+	left: 430px;
+}
+
+.intro__slider-btn {
+    width: 0;
+    height: 0;
+	padding: 0;
+	color: transparent;
+	font-size: 0;
+	cursor: pointer;
+	background: none;
+	margin: 0 4px;
+}
+
+.intro__slider-btn:focus {
+	outline: none;
+}
+
+.intro__slider-btn--prev {
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+.intro__slider-btn--next {
+	border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
+}
+
 .intro__inner {
 	height: 600px;
 	display: flex;
@@ -165,13 +197,11 @@ ul, ol {
 	justify-content: space-between;
 	position: relative;
 	z-index: 2;
-	pointer-events: none;
 }
 
 .intro__text {
 	margin-bottom: 45px;
 	text-align: right;
-	pointer-events: auto;
 }
 
 .intro__countries {
@@ -215,7 +245,6 @@ ul, ol {
 .request-form--intro {
 	position: relative;
 	bottom: -30px;
-	pointer-events: auto;
 }
 
 .request-form--right {
