@@ -120,7 +120,8 @@ ul, ol {
 .intro {
 	position: relative;
 	margin-bottom: 30px;
-	background-color: #000;
+
+	background-color: #04222a;
 }
 
 .intro--blog {
@@ -143,6 +144,13 @@ ul, ol {
 	top: 0;
 	left: 0;
 	z-index: 1;
+	background: #000 url("../images/intro-bg.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.intro__slider.slick-initialized {
+	background: #000;
+	display: block;
 }
 
 .intro__slider .slick-list,
@@ -555,6 +563,13 @@ ul, ol {
 /* Reviews */
 .reviews {
 	position: relative;
+	height: 200px;
+	background: url("../images/ajax-loader.gif") no-repeat center;
+}
+
+.reviews.slick-initialized {
+	background: none;
+	height: auto;
 }
 
 .reviews:before,
@@ -621,6 +636,7 @@ ul, ol {
 }
 
 .reviews__item {
+	display: none;
 	padding: 0 10px;
 }
 
@@ -1288,6 +1304,9 @@ ul, ol {
 
         text-align: center;
     }
+	.intro__slider-arrows {
+		display: none;
+	}
     /* Request form */
     .request-form--intro {
         order: 2;
