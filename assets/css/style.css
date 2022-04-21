@@ -120,8 +120,6 @@ ul, ol {
 .intro {
 	position: relative;
 	margin-bottom: 30px;
-
-	background-color: #04222a;
 }
 
 .intro--blog {
@@ -144,18 +142,34 @@ ul, ol {
 	top: 0;
 	left: 0;
 	z-index: 1;
-	background: #000 url("../images/intro-bg.jpg") no-repeat center;
+	background: #04222a url("../images/intro-bg.jpg") no-repeat center;
 	background-size: cover;
 }
 
+.intro__slider .slider-item {
+	display: none;
+}
+
 .intro__slider.slick-initialized {
-	background: #000;
+	background: #04222a;
+}
+
+.intro__slider.slick-initialized.slider-item {
 	display: block;
 }
 
 .intro__slider .slick-list,
 .intro__slider .slick-track {
 	height: 100%;
+}
+
+.intro__slider-item {
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .intro__slider-photo {
@@ -1219,7 +1233,7 @@ ul, ol {
 	/* Clients */
 	.clients {
 		flex-direction: column;
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 	}
 	.clients__logos,
 	.clients__reviews {
@@ -1435,6 +1449,11 @@ ul, ol {
 	}
 	.clients__list-logo {
 		margin: 0 auto;
+	}
+	.clients-love {
+		display: block;
+		margin-left: 0;
+		margin-top: 20px;
 	}
 	/* Mission */
 	.mission {
