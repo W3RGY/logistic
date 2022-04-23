@@ -11,7 +11,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-body.no-scroll {
+body.no-scroll,
+body.show-nav {
 	overflow: hidden;
 }
 
@@ -72,8 +73,9 @@ ul, ol {
 	transition: background .2s linear;
 }
 
-.header--dark {
-	background-color: rgba(0,0,0, 0.8);
+.header--dark,
+body.show-nav .header {
+	background-color: rgba(0,0,0, 0.9);
 }
 
 .header__inner {
@@ -110,10 +112,66 @@ ul, ol {
 
 /* Burger */
 .burger {
+	width: 30px;
+	height: 23px;
+	position: relative;
 	padding: 0;
 	background: none;
 	border: 0;
 	display: none;
+	font-size: 0;
+	color: transparent;
+}
+
+.burger:focus {
+	outline: none;
+}
+
+.burger__line {
+	margin: 3px 0;
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.burger__line:nth-child(1) {
+	width: 20px;
+	margin-left: auto;
+}
+
+.burger__line:nth-child(1),
+.burger__line:nth-child(3) {
+ transform-origin: right;
+ transition: width .2s ease-out;
+}
+
+.burger.active
+.burger__line:nth-child(1),
+.burger.active
+.burger__line:nth-child(3) {
+	width: 0;
+}
+
+.burger.active
+.burger__line:nth-child(2),
+.burger.active
+.burger__line:nth-child(4) {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform-origin: center;
+	transition: transform .2s ease-out;
+}
+
+.burger.active
+.burger__line:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+.burger.active
+.burger__line:nth-child(4) {
+	transform: rotate(-45deg);
 }
 
 /* intro */
@@ -1269,21 +1327,23 @@ ul, ol {
     }
     /* Nav */
     .nav {
-        display: none;
         width: 100%;
         height: auto;
         min-height: calc(100vh - 50px);
         flex-direction: column;
         padding-top: 9px;
-
         background-color: rgba(0, 0, 0, .85);
-
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         z-index: 1;
+		transform: translateX(100%);
+		transition: transform .2s ease-out;
     }
+	.nav.show {
+		transform: translateX(0);
+	}
     .nav__link {
         display: block;
         padding: 10px 15px;
