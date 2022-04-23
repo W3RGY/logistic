@@ -1009,7 +1009,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 [data-aos=fade-up] {
-	transform: translate3d(0, 30px, 0)
+	transform: translate3d(0, 50px, 0)
 }
 
 [data-aos=fade-down] {
@@ -1017,7 +1017,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 [data-aos=fade-right] {
-	transform: translate3d(-100px, 0, 0)
+	transform: translate3d(-30px, 0, 0)
 }
 
 [data-aos=fade-left] {
