@@ -109,7 +109,7 @@ $(function () {
 				transform: 'scale(1)',
 				opacity: '1'
 			});
-		});
+		}, 100);
 	});
 
 	$('[data-modal-close]').on('click', function(event) {
@@ -123,7 +123,7 @@ $(function () {
 		modalClose(modal);
 	});
 
-	$('.modal__content').on('click', function(event) {                       /*does not close the modal content window*/
+	$('.modal__content').on('click', function(event) {                 /*does not close the modal content window*/
 		event.stopPropagation();
 	});
 
@@ -185,7 +185,7 @@ $(function () {
 	  // below listed default settings
 	  AOS.init({
 		// Global settings:
-		disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+		disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
 		startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
 		initClassName: 'aos-init', // class applied after initialization
 		animatedClassName: 'aos-animate', // class applied on animation
