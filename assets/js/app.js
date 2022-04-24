@@ -157,11 +157,11 @@ $(function () {
 		speed: 500
 	  });
 
-	$('#introSliderPrev').on('click', function () {
+	$('#introSliderPrev').on('click', function() {
 		introSlider.slick('slickPrev')
 	});
 
-	$('#introSliderNext').on('click', function () {
+	$('#introSliderNext').on('click', function() {
 		introSlider.slick('slickNext')
 	});
 
@@ -175,7 +175,9 @@ $(function () {
 		slidesToScroll: 1,
 		arrows: false,
 		dots: true,
-		speed: 500
+		speed: 500,
+		autoplay: true,
+        autoplaySpeed: 4000,
 	  });
 
 	/* AOS js https://github.com/michalsnik/aos

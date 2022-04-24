@@ -213,7 +213,7 @@ body.show-nav .header {
 	background: #04222a;
 }
 
-.intro__slider.slick-initialized.slider-item {
+.intro__slider.slick-initialized .slider-item {
 	display: block;
 }
 
@@ -236,6 +236,7 @@ body.show-nav .header {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: center;
 }
 
 .intro__slider-arrows {
@@ -252,7 +253,7 @@ body.show-nav .header {
 	font-size: 0;
 	cursor: pointer;
 	background: none;
-	margin: 0 4px;
+	margin: 0 3px;
 }
 
 .intro__slider-btn:focus {
