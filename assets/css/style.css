@@ -1334,7 +1334,7 @@ body.show-nav .header {
     .nav {
         width: 100%;
 		overflow: auto;
-        min-height: calc(100vh - 50px);
+        height: calc(100vh - 50px);
         flex-direction: column;
         padding-top: 9px;
         background-color: rgba(0, 0, 0, .85);
