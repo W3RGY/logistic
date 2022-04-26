@@ -201,7 +201,7 @@ body.show-nav .header {
 	top: 0;
 	left: 0;
 	z-index: 1;
-	background: #04222a url("../images/intro-bg.jpg") no-repeat center;
+	background: #04222a url("../images/slider/slide-1.jpg") no-repeat center;
 	background-size: cover;
 }
 
@@ -368,6 +368,9 @@ body.show-nav .header {
 	background: none;
 	border: none;
 	border-bottom: 1px solid rgba(255,255,255, 0.25);
+	border-radius: 0;
+	appearance: none;
+	box-shadow: none;
 
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
@@ -796,7 +799,7 @@ body.show-nav .header {
 	background-image:linear-gradient(to bottom, #fff 40%, #a5a5a5 40%);
 	background-size: 2px 35px;
 	background-repeat: repeat-y;
-	background-position:left 12px top -4px;
+	background-position:left 12px top -8px;
 }
 
 .benefits-list:before,
