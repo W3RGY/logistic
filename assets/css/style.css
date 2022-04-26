@@ -86,6 +86,28 @@ body.show-nav .header {
 	align-items: center;
 }
 
+.header__logo {
+	text-decoration: none;
+	color: #fff;
+}
+
+.header__logo-black {
+	color: #2C2C2C;
+}
+
+.header__logo img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header__logo-text {
+	margin-left: 11px;
+	font-size: 15px;
+	font-weight: 700;
+	position: relative;
+	top: 2px;
+}
+
 /* Nav */
 .nav {
 	display: flex;
