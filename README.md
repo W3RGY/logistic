@@ -1,6 +1,11 @@
 # logistic
 https://w3rgy.github.io/logistic/
-Technologies
+
+
+Technologies:
+
 HTML
+
 CSS
+
 Jquery
